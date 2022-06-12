@@ -1,0 +1,45 @@
+/* General */
+
+.resultado{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 40vh;
+  font-family: 'Lato';
+}
+
+/* Texto Vacio */
+
+.resultado img{
+  width: 250px;
+  height: 250px;
+}
+
+#p-principal{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#p-secundario{
+  font-size: 1.2rem;
+}
+
+
+/* Resultado */
+
+section textarea{
+  height: 70%;
+  width: 90%;
+  text-align: top;
+  font-family: 'Lato';
+  font-size: 1.7rem;
+  border: none;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+#result{
+  justify-content: space-around;
+}

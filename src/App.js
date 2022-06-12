@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Header from './components/Header';
+import Input from './components/Input';
+import Resultado from './components/Resultado';
 
 function App() {
+  
+  //Pruebas
+  const [data, setData] = useState('');
+  const childToParent = (childdata) => {
+    setData(childdata)
+  };
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className='contenedor'>
+        <Input childToParent={childToParent}/>
+        <Resultado resultado={data}/>
+      </div>
     </div>
   );
 }

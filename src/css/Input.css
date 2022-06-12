@@ -1,0 +1,52 @@
+
+
+.encriptador{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 40vh;
+  font-family: 'Lato';
+  padding-top: 15px;
+}
+
+#input{
+  height: 70%;
+  width: 90%;
+  text-align: top;
+  font-family: 'Lato';
+  font-size: 1.7rem;
+  border: none;
+  border-radius: 25px;
+  padding: 25px;
+}
+#input:focus{
+  background-color: #04067b;
+  color: white;
+  border: 2px solid white;
+}
+
+section p{
+  font-family: 'Lato';
+}
+
+.contenedor-btn{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+div button{
+  width: 175px;
+  height: 50px;
+  border: 2px solid #04067b;
+  border-radius: 25px;
+}
+
+div button:hover {
+  background-color: #04067b;
+  color: white;
+  cursor: pointer;
+}
